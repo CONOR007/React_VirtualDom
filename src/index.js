@@ -19,7 +19,10 @@ const virtualDOM = (
     <input type="text" value="13" />
   </div>
 )
+const Component = function(){
+  return <div>123</div>
+}
 
-TinyReact.render(virtualDOM,root);
+TinyReact.render(<Component/>,root);
 
 console.log(virtualDOM);

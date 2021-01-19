@@ -1,4 +1,5 @@
 import mountElement from './mountElement'
+import updateNodeElement from './updateNodeElement'
 export default function createDOMElement (virtualDOM,container) {
     let newElement = null;
     if(virtualDOM.type === "text"){
@@ -7,6 +8,7 @@ export default function createDOMElement (virtualDOM,container) {
     }else{
         //元素节点
         newElement = document.createElement(virtualDOM.type)
+        updateNodeElement(newElement,virtualDOM)
     }
     // 递归创建子节点
     virtualDOM.children.forEach(child=>{
@@ -14,5 +16,4 @@ export default function createDOMElement (virtualDOM,container) {
         mountElement(child,newElement)
     })
     return newElement
-
 }
