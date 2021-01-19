@@ -1,4 +1,4 @@
-import TinyReact from "./TinyReact";
+import TinyReact from "./TinyReact/01index";
 
 const root = document.getElementById('root');
 

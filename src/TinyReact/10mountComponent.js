@@ -1,6 +1,6 @@
-import isFunction from './isFunction';
-import isFunctionComponent from './isFunctionComponent'
-import mountNativeElement from './mountNativeElement'
+import isFunction from './09isFunction';
+import isFunctionComponent from './11isFunctionComponent'
+import mountNativeElement from './06mountNativeElement'
 export default function mountComponent (virtualDOM,container) {
     let nextVirtualDOM;
     //判断组件是类组件还是函数组件

@@ -1,4 +1,4 @@
-import createDOMElement from './createDOMElement'
+import createDOMElement from './07createDOMElement'
 
 /** 把virtualDOM转换成真实的Dom */
 export default function mountNativeElement (virtualDOM,container) {

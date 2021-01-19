@@ -1,4 +1,4 @@
-import mountElement from './mountElement'
+import mountElement from './05mountElement'
 export default function diff (virtualDOM,container,oldDom) {
     // 判断oldDom存不存在
     if(!oldDom){

@@ -1,5 +1,5 @@
-import mountElement from './mountElement'
-import updateNodeElement from './updateNodeElement'
+import mountElement from './05mountElement'
+import updateNodeElement from './08updateNodeElement'
 export default function createDOMElement (virtualDOM,container) {
     let newElement = null;
     if(virtualDOM.type === "text"){

@@ -1,4 +1,4 @@
-import isFunction from './isFunction'
+import isFunction from './09isFunction'
 // 判断是否是函数组件
 export default function isFunctionComponent (virtualDOM) {
     const type = virtualDOM.type

@@ -12,6 +12,7 @@ export default function createElement(type,props,...children){
         }
         return result
     },[])
+    // 返回虚拟dom
     return {
         type,
         props:Object.assign({children:childElement},props),// 组件中通过props.children访问子组件
