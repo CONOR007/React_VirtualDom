@@ -1,4 +1,6 @@
-import TinyReact from "./TinyReact"
+import TinyReact from "./TinyReact";
+
+const root = document.getElementById('root');
 
 const virtualDOM = (
   <div className="container">
@@ -17,5 +19,7 @@ const virtualDOM = (
     <input type="text" value="13" />
   </div>
 )
+
+TinyReact.render(virtualDOM,root);
 
 console.log(virtualDOM);
